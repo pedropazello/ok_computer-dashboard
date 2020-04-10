@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://foo.com/okcomputer/all.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic zzzzzzzzzz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 10 Apr 2020 02:55:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"9ce171063121bdb3faeff6ca959a4d20"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21b2b7f9-6a8a-4f20-a7e1-1a30810289af
+      X-Runtime:
+      - '0.008254'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"default":{"message":"Application is running","success":true,"time":3.604218363761902e-06},"database":{"message":"Schema
+        version: 20200325172040","success":true,"time":0.002504512667655945}}'
+    http_version: null
+  recorded_at: Fri, 10 Apr 2020 02:55:18 GMT
+recorded_with: VCR 5.1.0
