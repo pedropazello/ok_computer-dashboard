@@ -1,0 +1,23 @@
+<% @endpoints.each do |endpoint| %>
+  <h2><%= endpoint["name"] %></h2>
+  <% api = OkComputerApi.new(endpoint: endpoint["url"], username: endpoint["username"], password: endpoint["password"]) %>
+  <table>
+    <thead>
+      <th>name</th>
+      <th>passed</th>
+      <th>message</th>
+      <th>time</th>
+    </thead>
+    <tbody>
+      <% api.all.each do |key, value| %>
+        <tr>
+          <td><%= key %></td>
+          <td><%= value["success"] %></td>
+          <td><%= value["message"] %></td>
+          <td><%= value["time"] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<% end %>

@@ -1,0 +1,9 @@
+- name: "Foo Stage"
+  url: "https://stage.foo.com.br/okcomputer/all"
+  username: "user"
+  password: "-secret-"
+
+- name: "Foo Production"
+  url: "https://foo.com.br/okcomputer/all"
+  username: "user"
+  password: "-secret-"
